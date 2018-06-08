@@ -1,0 +1,28 @@
+.categories {
+    width: 15%;
+    float: left;
+    height: 100vh;
+    background: $color-orange;
+    box-sizing: border-box;
+    overflow-y: scroll;
+
+    .category {
+        border: 3px solid transparent;
+        transition: .6s;
+        background: white;
+        border-radius: 10px;
+        width: 70%;
+        margin: auto;
+        margin-top: 15px;
+        img {
+            width: 100%;
+            margin: auto;
+            margin-top: 30px;
+
+        }
+    }
+    .active{
+        border: 3px solid $color-red;
+        transform: scale(1.1);
+    }
+}

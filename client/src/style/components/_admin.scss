@@ -1,0 +1,80 @@
+.admin{
+    aside{
+        border-right:1px solid $color-orange;
+        float: left;
+        box-sizing: border-box;
+        width:20%;
+        height:100vh;
+        a{
+            background: white;
+            border:1px solid $color-orange;
+            color: #000;
+            padding:20px 0;
+            display: block;
+        }
+        .active{
+            background: $color-orange;
+            color: #000;
+        }
+    }
+    .admin-menu, .admin-orders{
+        float: right;
+        width:80%;
+        form{
+
+        }
+        input,button{
+            display: block;
+            font-size:18px;
+            margin: auto;
+            width:30%;
+            margin-top:10px;
+            box-sizing: border-box;
+        }
+        button{
+            border:1px solid $color-orange;
+        }
+        input::placeholder{
+            font-weight:300;
+        }
+    }
+    ul{
+        display: flex;
+        background: lighten($color-red, 30%);
+        justify-content: space-around;
+    }
+    li{
+        font-size:20px;
+        font-weight:300;
+        padding:15px 0;
+        transition: .2s;
+        cursor: pointer;
+        flex: 1;
+    }
+    .active-cat{
+        background: $color-red;
+        color: #fff;
+    }
+    .menu-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .menu-item{
+        width:20%;
+        margin:20px;
+        cursor: pointer;
+        img{
+            width:100%;
+        }
+        h3{
+            font-size:20px;
+        }
+        h4{
+            font-size:18px;
+        }
+    }
+    h5{
+        color: $color-red;
+    }
+}
